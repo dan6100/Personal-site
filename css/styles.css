@@ -157,11 +157,11 @@ form div {
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px), screen and (max-device-width: 500px) {
 	html, body {
-		overflow: initial;
+		overflow-y: initial;
 	}
-	ul li {
+	header ul li {
 		display: list-item;
 	}
 	.work-image {
@@ -178,8 +178,8 @@ form div {
 
 }
 
-@media screen and (max-height: 860px) {
+@media screen and (max-height: 860px), screen and (max-device-height: 860px) {
 	html, body {
-		overflow: initial;
+		overflow-y: initial;
 	}
 }
