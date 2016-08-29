@@ -1,0 +1,185 @@
+html, body{
+	font-family: 'Open Sans', Verdana, Helvetica, sans-serif; 
+	color: #EFEFEF;
+	background-color: #EF9500;
+	height:100%;
+	width:100%;
+	margin: 0;
+	line-height: 1.8;
+	overflow: hidden;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	font-family: 'Raleway';
+	font-weight: 100;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-weight: 100;
+}
+
+ul {
+	list-style: none;
+	padding: 2em 0 2em 0; 
+
+}
+ul li {
+	display: inline-block;
+}
+
+header ul li {
+	padding: 0 10%;
+}
+
+footer {
+	background-color: inherit;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0.9em 0;
+}
+
+footer ul li {
+	font-family: FontAwesome;
+	padding: 0 3%;
+}
+
+input, textarea {
+	border: transparent;
+	padding: 0.5em;
+	font-family: inherit;
+}
+
+textarea {
+	min-width: 40%;
+	max-width: 85%;
+}
+
+.content {
+	padding-top: 3em;
+	margin-bottom: 3em;
+}
+
+.page {
+	float: left;
+}
+
+.work-image {
+	width: 44%;
+	overflow:hidden; 
+	margin: 2em 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.work-image img {
+	max-height: 100%;
+}
+
+.work-text {
+	width: 48%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.button {
+	background-color: #20A789;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	width: 12em;
+	transition: all 200ms ease-in-out;
+}
+
+.button a{
+	padding: 0.8em;
+	display: block;
+}
+
+
+.button:hover {
+	background-color: #009A78;
+}
+
+form div {
+	margin-top: 1em;
+}
+
+.form-button {
+	background-color: #20A789;
+	border: transparent;
+	color: inherit;
+	padding: 1em;
+	margin: 1em 1em 4em 1em;
+	font-family: inherit;
+	font-size: inherit;
+	width: 12em;
+	transition: all 200ms ease-in-out;
+}
+
+.form-button:hover {
+	background-color: #009A78;
+	cursor: pointer;
+}
+
+
+.left {
+	float: left;
+	margin-left: 3em;
+}
+
+.right {
+	float: right;
+	margin-right: 3em;
+}
+
+.clearfix {
+	display: inline-block;
+}
+.clearfix::after { 
+	content: "";
+	clear: both; 
+}
+
+
+@media screen and (max-width: 500px){
+	html, body {
+		overflow: initial;
+	}
+	ul li {
+		display: list-item;
+	}
+	.work-image {
+		width: 90%;
+		display: block;
+		margin: auto;
+	}
+
+	.work-text {
+		width: 90%;
+		display: block;
+		margin: auto;
+	}
+
+}
+
+@media screen and (max-height: 860px) {
+	html, body {
+		overflow: initial;
+	}
+}
