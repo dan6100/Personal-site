@@ -2,6 +2,7 @@ $(document).ready(function () {
     var pageLength = $('.page').length,
         contentWidth = 100 * pageLength,
         slideWidth = 100 / pageLength;
+
     $('.content').width(contentWidth + '%'); 
     $('.page').width(slideWidth + '%');
     
@@ -11,8 +12,11 @@ $(document).ready(function () {
         
         var slideNumber = $($(this).attr('href')).index('.page'),
             margin = slideNumber * -100 + '%';
-    
+
+        var pageId = $(this).attr('href');
+
         $('.content').animate({marginLeft: margin}, 200);
+
         return false;
     });
 
